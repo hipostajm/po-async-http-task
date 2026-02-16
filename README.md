@@ -14,6 +14,7 @@
 }
 ```
 Adres do endpointu gdzie będzie sprawdzany status powinien zostać przekazany w headerze Location odpowiedzi.
+
 3. Stwórz endpoint GET /task/<id>, na który pobierasz status zadania z serwera. Body odpowiedzi, powinien wyglądać następująco:
 ```json
 {
@@ -23,6 +24,7 @@ Adres do endpointu gdzie będzie sprawdzany status powinien zostać przekazany w
 ```
 Statusy mogą być ustawiane losowo.
 Jeśli status jest ustawiony na "done" w headerze Location powinien zostać umieszczony URL do kolejnego endpointu.
+
 4. Stwórz endpoint GET /task_result/<id>, który zwróci json o następującej strukturze:
 ```json
 {
